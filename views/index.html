@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ADP Test</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="main">
+      <h4>Hey there!</h4>
+      <h4>
+        Start button gets data, processes it, displays and posts it to submit task endpoint. This process happens till end task is clicked.
+      </h4>
+      <div class='center'>
+        <button id='startTask' class='button'>Start Task</button>
+      </div>
+      <br/>
+      <div style="text-align: center; border: 1px solid black; width: 300px; margin: auto;">
+        <h4>Data recieved</h4>
+        <hr/>
+        <p><b>Operation: </b><span id='operation'></span></p>
+        <p><b>Left: </b><span id='left'></span></p>
+        <p><b>Right: </b><span id='right'></span></p>
+      </div>
+      <br/>
+      <div style="text-align: center; border: 1px solid black; width: 300px; margin: auto;">
+        <h4>Data Processed</h4>
+        <hr/>
+        <p><b>Result: </b><span id='result'></span></p>
+      </div>
+      <br/>
+      <div style="text-align: center; border: 1px solid black; width: 300px; margin: auto;">
+        <h4>Data Posted</h4>
+        <hr/>
+        <p><b>Message: </b><span id='message'></span></p>
+      </div>
+      <br/>
+      <div class='center'>
+        <button id='endTask' class='button'>End Task</button>
+      </div>
+  </div> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

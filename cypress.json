@@ -1,0 +1,11 @@
+{
+    "fileServerFolder": ".",
+    "fixturesFolder": "./tests/e2e",
+    "integrationFolder": "./tests/e2e",
+    "modifyObstructiveCode": false,
+    "video": true,
+    "videosFolder":  "./tests/e2e/videos",
+    "screenshotsFolder":  "./tests/e2e/screenshots",
+    "chromeWebSecurity": false
+  }
+  

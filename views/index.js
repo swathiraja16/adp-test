@@ -1,27 +1,30 @@
-var start = false
 var data;
 
 $(document).ready(function () {
-  console.log('js file')
-
+  //onclick event for startTask button
   $('#startTask').click(function () {
     handleData()
     startTask();
   })
 
+  //onclick event for endTask button
   $('#endTask').click(function () {
     endTask();
   })
 })
 
+//calls handleData function after every 2seconds to get data and display it on web page
 function startTask() {
   data = setInterval(handleData, 2000)
 }
 
+
+//clears interval that was set to getdata
 function endTask() {
   clearInterval(data)
 }
 
+//function that makes ajax call with GET method to get JSON data, display it on front-end, call submitTask() to post results back to server
 function handleData() {
   $.ajax({
     type: 'GET',
@@ -64,6 +67,8 @@ function handleData() {
   })
 }
 
+
+//function that makes ajax call to post results back to ADP endpoint and displays appropriate message sent back from api
 function submitTask(id, result){
   let req = {
     id: id,
